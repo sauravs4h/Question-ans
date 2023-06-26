@@ -1,25 +1,78 @@
-
-function demo(callback){
-
-    setTimeout(()=>{
-
-        let data="saurav";
-
-        callback(data);
-    },2000)
-}
-
-function cb(data){
-    console.log("data id",data)
-}
-
-demo(cb);
-
-useEffect(()=>{
+import React,{useEffect} from "react";
 
 
-    return ()=>{
+const mycomponent = ()=>{
+
+   const handleResize=()=>{
 
     }
 
-},[])
+    useEffect(()=>{
+
+        window.addEventListener("resize",handleResize);
+
+        return ()=>{
+            window.removeEventListener("resize",handleResize)
+        };
+    },[])
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React,{useEffect} from "react";
+
+function mycomponent(){
+
+    const handleResize=()=>{
+
+    };
+
+
+    useEffect(()=>{
+
+        window.addEventListener("resize",handleResize);
+
+
+        return ()=>{
+    
+            window.removeEventListener("resize",handleResize);
+        }
+
+    },[])
+   
+    
+}
+
+
+
+
+
+
+let obj={
+    name:"saurav",
+    age:25
+}
+
+Object.freeze(obj);
+
+obj.age=26
+
+
+
+
