@@ -33,6 +33,8 @@ In this code, the `makeCounter` function creates a "counter" function inside it.
 
 ### 3. yes , I understand the concept now. but I can not use this language in interview so give me a answer that I can tell in the interview.
 
+## THE ACTHUL ANSWER 
+
 Absolutely, I'll provide you with a more concise and interview-friendly response.
 
 "Closures in JavaScript are a way for a function to remember the variables from the place where it was created. Even after the outer function is done running, the inner function can still access and use those remembered variables. It's like the inner function carries a special memory of where it came from."
