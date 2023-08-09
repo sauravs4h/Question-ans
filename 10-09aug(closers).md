@@ -45,7 +45,7 @@ Example:
 
 ---------------------------------------------------------------------
 
-## what is lexical environment javascript.
+## Q  what is lexical environment javascript.
 
 Sure, let's break down "lexical environment" in simple terms.
 
