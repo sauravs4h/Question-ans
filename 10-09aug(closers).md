@@ -44,3 +44,28 @@ Example:
 "A closure example could be a counter function. Imagine we have a function called `makeCounter()` that creates a counter. The inner function it creates remembers a variable called `count`. Even after `makeCounter()` has finished running, the inner function still knows about `count` and can update it whenever the inner function is called. This way, closures help us keep certain data private and organized."
 
 ---------------------------------------------------------------------
+
+## what is lexical environment javascript.
+
+Sure, let's break down "lexical environment" in simple terms.
+
+In JavaScript, a lexical environment is like a special space where a piece of code lives. This space holds all the variables, functions, and other things that the code can use.
+
+Think of it like a room where you're working on your homework. The room contains your desk, books, and other materials you need. The surroundings of the room also matter – like whether it's quiet or noisy outside. In JavaScript, the lexical environment is kind of like your room, and the variables and functions you use are your materials.
+
+Here's an example:
+
+```javascript
+function greet(name) {
+  const message = "Hello, " + name;
+  console.log(message);
+}
+
+greet("Alice");
+```
+
+In this code, the lexical environment for the `greet` function includes the variable `name` and the constant `message`. When you call `greet("Alice")`, the function uses these things from its lexical environment to create and display the greeting message.
+
+### In an interview, you can explain it like this:
+
+"A lexical environment in JavaScript is like a space where a piece of code lives. It holds all the variables and functions that the code can use. It's similar to a room where you work on something, and the things in the room, along with the surroundings, help you do your work. For instance, in a function, its lexical environment includes the variables and constants used within the function."
