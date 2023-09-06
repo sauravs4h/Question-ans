@@ -31,6 +31,7 @@ undefined    // Result of the evaluation
 undefined    // Result of the function definition
 > greet('Alice'); // Read and evaluate
 'Hello, Alice!'  // Result of the function call
+
 ```
 
 REPLs are valuable tools for quickly testing code snippets, exploring language features, and debugging, as they provide immediate feedback and help you understand how JavaScript behaves step by step.
