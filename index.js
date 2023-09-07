@@ -1,34 +1,21 @@
-import React,{useEffect} from "react";
+// import React,{useEffect} from "react";
 
 
-const mycomponent = ()=>{
+// const mycomponent = ()=>{
 
-   const handleResize=()=>{
+//    const handleResize=()=>{
 
-    }
+//     }
 
-    useEffect(()=>{
+//     useEffect(()=>{
 
-        window.addEventListener("resize",handleResize);
+//         window.addEventListener("resize",handleResize);
 
-        return ()=>{
-            window.removeEventListener("resize",handleResize)
-        };
-    },[])
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+//         return ()=>{
+//             window.removeEventListener("resize",handleResize)
+//         };
+//     },[])
+// }
 
 
 
