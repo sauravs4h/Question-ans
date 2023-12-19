@@ -1,20 +1,49 @@
+// // import React,{useEffect} from "react";
+
+
+// // const mycomponent = ()=>{
+
+// //    const handleResize=()=>{
+
+// //     }
+
+// //     useEffect(()=>{
+
+// //         window.addEventListener("resize",handleResize);
+
+// //         return ()=>{
+// //             window.removeEventListener("resize",handleResize)
+// //         };
+// //     },[])
+// // }
+
+
+
+
+
+
 // import React,{useEffect} from "react";
 
+// function mycomponent(){
 
-// const mycomponent = ()=>{
+//     const handleResize=()=>{
 
-//    const handleResize=()=>{
+//     };
 
-//     }
 
 //     useEffect(()=>{
 
 //         window.addEventListener("resize",handleResize);
 
+
 //         return ()=>{
-//             window.removeEventListener("resize",handleResize)
-//         };
+    
+//             window.removeEventListener("resize",handleResize);
+//         }
+
 //     },[])
+   
+    
 // }
 
 
@@ -22,30 +51,14 @@
 
 
 
-import React,{useEffect} from "react";
+// let obj={
+//     name:"saurav",
+//     age:25
+// }
 
-function mycomponent(){
+// Object.freeze(obj);
 
-    const handleResize=()=>{
-
-    };
-
-
-    useEffect(()=>{
-
-        window.addEventListener("resize",handleResize);
-
-
-        return ()=>{
-    
-            window.removeEventListener("resize",handleResize);
-        }
-
-    },[])
-   
-    
-}
-
+// obj.age=26
 
 
 
@@ -53,13 +66,18 @@ function mycomponent(){
 
 let obj={
     name:"saurav",
-    age:25
+    greet:function(greeting,age){
+        console.log(greeting,this.name,"age is",age)
+    }
 }
 
-Object.freeze(obj);
+let anotherperson={
+    name:"mohan"
+}
 
-obj.age=26
+//obj.greet.call(anotherperson,"hellooooo")
 
+// const greetsaurav=obj.greet.bind({name:"kamal"},"hello");
+// greetsaurav();
 
-
-
+obj.greet.apply(anotherperson,["hello",26])
